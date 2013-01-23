@@ -15,7 +15,7 @@ Requirements
 How to install ?
 ---
 * Download this script to your web server
-* Set werserver document root to www folder
+* Set document root to www folder
 * make cache dir writable by your web server
 * and.... that's all !
  
