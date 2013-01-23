@@ -35,3 +35,7 @@ default_segments
 
 If you want to use a GUI client look at [Cyberduck](http://cyberduck.ch/ "GUI Swift client")
 
+Thanks
+---
+To [Vincent Giersch](https://github.com/gierschv) who has made all the reverse engineering job.
+
