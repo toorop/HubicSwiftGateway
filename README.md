@@ -7,8 +7,6 @@ Warning
 -------
 This tool is not supported by OVH.
 
-
-
 Requirements
 ---
 * web server
@@ -16,8 +14,9 @@ Requirements
 
 How to install ?
 ---
-* Download this script to your web root folder
-* make cache dir writable by your webserver
+* Download this script to your web server
+* Set werserver document root to www folder
+* make cache dir writable by your web server
 * and.... that's all !
  
 How to use it ?
