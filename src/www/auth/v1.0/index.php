@@ -66,7 +66,7 @@ function getCredentials($user, $key)
     $r = wsCall('sessionHandler', 'getAnonymousSession', array());
     $r = json_decode($r);
     /* get hubics */
-    $r = wsCall('hubic', 'getHubics', array('sessionId' => $r->answer->session->id, 'email' => 'toorop@toorop.fr'));
+    $r = wsCall('hubic', 'getHubics', array('sessionId' => $r->answer->session->id, 'email' => $user));
     $hubics = json_decode($r);
     if(!is_array($hubics->answer) || count($hubics->answer)<1) {
         header("HTTP/1.0 404 Not found");
