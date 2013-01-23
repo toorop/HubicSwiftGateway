@@ -28,10 +28,10 @@ How to use it ?
 
 For example, if this script is hosted at URL https://hubic.toorop.fr (and yes it is) and you want to use swiftCli :
 ```
-swift -A https://hubic.toorop.fr/auth/v1.0 -U YOU_HUBIC_LOGIN -K YOUR_HUBIC_PASSWORD list
+swift -A https://hubic.toorop.fr -U YOU_HUBIC_LOGIN -K YOUR_HUBIC_PASSWORD list
 default
 default_segments
 ```
 
-If you want to use [Cyberduck](http://cyberduck.ch/ "Swift client") as GUI, just put https://yourServer.tld as server (ie without /auth/v1.0) 
+If you want to use a GUI client look at [Cyberduck](http://cyberduck.ch/ "GUI Swift client")
 
