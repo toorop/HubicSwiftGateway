@@ -22,6 +22,10 @@
 define('CACHEPATH',dirname(__FILE__).'/../../../cache');
 define('CACHETIME',3600);
 
+// Curl is available ?
+if (!function_exists('curl_init'))
+    die500('Curl seems to be not supported by your PHP version, checks : http://php.net/manual/en/curl.installation.php');
+
 
 // Cache is ok ?
 if(!file_exists(CACHEPATH))
