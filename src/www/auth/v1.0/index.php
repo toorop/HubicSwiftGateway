@@ -37,6 +37,7 @@ if(!is_writable(CACHEPATH))
 // Get Auth-User & Auth-Key  from headers
 if (!$_SERVER || !$_SERVER['HTTP_X_AUTH_USER'] || !$_SERVER['HTTP_X_AUTH_KEY']) {
     header("HTTP/1.0 403 Forbidden");
+    echo 'Headers AUTH_USER and/or AUTH_KEY are missing';
     flush();
     die();
 }
@@ -115,7 +116,8 @@ function wsCall($ws, $method, $params)
     $httpCode = curl_getinfo($c, CURLINFO_HTTP_CODE);
     $error = curl_error($c);
     if ($httpCode !== 200) {
-        header('HTTP/1.0 ' . $httpCode . '  ' . $error);
+        header('HTTP/1.0 ' . $httpCode);
+        echo "ERROR : ".$error;
         flush();
         die();
     }
