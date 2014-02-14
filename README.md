@@ -1,6 +1,8 @@
 ### WARNING DEPRECIATED 
 use https://github.com/oderwat/hubic2swiftgate as alternative
 
+Details : https://github.com/Toorop/HubicSwiftGateway/issues/1
+
 
 HubicSwiftGateway
 =================
